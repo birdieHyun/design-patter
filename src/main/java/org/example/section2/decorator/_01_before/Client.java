@@ -28,10 +28,18 @@ public class Client {
 
         System.out.println();
 
-        Client client3 = new Client(new SpamFilteringCommentService());
+        Client client4 = new Client(new SpamFilteringCommentService());
+        client4.writeComment("write comment");
+        client4.writeComment("...제거 테스트...");
+        client4.writeComment("http://donghyun.me"); // CommentService를 상속받으면, trim이 되지 않음 -> 상속의 문제점이 여기서 발견됨 (단일상속만 되기 때문에) -> trim + filtering을 또 만들어야 함
+        // -> Trim + SpamFilter를 하고 싶다면??
+
+        System.out.println();
+
+        Client client3 = new Client(new TrimmingAndSpamFilteringCommentService());
         client3.writeComment("write comment");
         client3.writeComment("...제거 테스트...");
-        client3.writeComment("http://donghyun.me"); // CommentService를 상속받으면, trim이 되지 않음 -> 상속의 문제점이 여기서 발견됨 (단일상속만 되기 때문에) -> trim + filtering을 또 만들어야 함
-        // -> Trim + SpamFilter를 하고 싶다면??
+        client3.writeComment("http://donghyun.me");
+        // 그런데 다른 요구사항이 점차 추가된다면...?
     }
 }
