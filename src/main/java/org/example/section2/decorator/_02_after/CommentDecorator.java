@@ -1,6 +1,6 @@
 package org.example.section2.decorator._02_after;
 
-public class CommentDecorator implements CommentService {
+public abstract class CommentDecorator implements CommentService {
 
     private CommentService commentService;
 
