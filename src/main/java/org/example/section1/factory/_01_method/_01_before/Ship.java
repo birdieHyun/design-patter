@@ -1,4 +1,4 @@
-package org.example.section2.factory.method._01_before;
+package org.example.section1.factory._01_method._01_before;
 
 public class Ship {
 

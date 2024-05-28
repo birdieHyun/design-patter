@@ -1,4 +1,4 @@
-package org.example.section2.factory.method._03_java;
+package org.example.section1.factory._01_method._03_java;
 
 public class SpringBeanFactoryExample {
 

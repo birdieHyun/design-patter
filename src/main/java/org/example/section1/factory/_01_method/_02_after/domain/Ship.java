@@ -1,4 +1,4 @@
-package org.example.section2.factory.method._02_after.domain;
+package org.example.section1.factory._01_method._02_after.domain;
 
 public class Ship {
 

@@ -1,9 +1,9 @@
-package org.example.section2.factory.method._02_after;
+package org.example.section1.factory._01_method._02_after;
 
 
-import org.example.section2.factory.method._02_after.factory.BlackShipFactory;
-import org.example.section2.factory.method._02_after.factory.ShipFactory;
-import org.example.section2.factory.method._02_after.factory.WhiteShipFactory;
+import org.example.section1.factory._01_method._02_after.factory.BlackShipFactory;
+import org.example.section1.factory._01_method._02_after.factory.ShipFactory;
+import org.example.section1.factory._01_method._02_after.factory.WhiteShipFactory;
 
 public class Client {
 

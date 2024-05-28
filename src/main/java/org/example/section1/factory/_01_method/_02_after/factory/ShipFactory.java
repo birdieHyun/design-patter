@@ -1,6 +1,6 @@
-package org.example.section2.factory.method._02_after.factory;
+package org.example.section1.factory._01_method._02_after.factory;
 
-import org.example.section2.factory.method._02_after.domain.Ship;
+import org.example.section1.factory._01_method._02_after.domain.Ship;
 
 public interface ShipFactory {
 
