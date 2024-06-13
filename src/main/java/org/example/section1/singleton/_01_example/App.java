@@ -24,7 +24,7 @@ public class App {
         constructor.setAccessible(true);
         Settings notSingletonInstance = constructor.newInstance();
 
-        System.out.println(instance == notSingletonInstance);
+        System.out.println("private 생성자 파과 " + (instance == notSingletonInstance));
 
         // 직렬화 & 역직렬화 이용하기 -> 객체를 파일로 저장했다가 다시 로딩할 수 있다.
         Settings serializeInstance = Settings.getInstance();
@@ -37,7 +37,7 @@ public class App {
             deserializeInstance = (Settings) in.readObject(); // 역직렬화를 할땐 반드시 생성자를 써서 새로운 객체를 만들어준다.
         }
 
-        System.out.println(serializeInstance == deserializeInstance);
+        System.out.println("=====" + (serializeInstance == deserializeInstance));
 
         SettingsEnum settings = SettingsEnum.INSTANCE;
 
